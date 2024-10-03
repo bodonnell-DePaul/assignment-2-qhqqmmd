@@ -1,0 +1,22 @@
+.App-header {
+  text-align: center;
+  background-color: white;
+}
+
+.custom-background1 {
+  background-color: mediumspringgreen; /* 自定义的背景颜色，例如橙色 */
+  color: black; /* 设置文字颜色为白色 */
+  border-radius: 15px; /* 使四个角变为圆角 */
+}
+
+.hidden {
+  display: none;
+}
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
