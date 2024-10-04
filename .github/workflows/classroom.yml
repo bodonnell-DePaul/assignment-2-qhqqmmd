@@ -13,16 +13,14 @@ jobs:
     steps:
     - name: Checkout code
       uses: actions/checkout@v4
-    - name: Install Dependencies
-      run: npm install  # Install all dependencies, not just specific ones
     - name: React Test
       id: react-test
       uses: classroom-resources/autograding-command-grader@v1
       with:
         test-name: React Test
         setup-command: npm install --save-dev jest jsdom jest-environment-jsdom react-scripts
-        command: npm run test -- --watchAll=false  # Use npm run test and add --watchAll=false to avoid CI issues
-        timeout: 60  # Increase timeout
+        command: npm test
+        timeout: 10
     - name: Autograding Reporter
       uses: classroom-resources/autograding-grading-reporter@v1
       env:
