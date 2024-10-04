@@ -18,8 +18,8 @@ jobs:
       uses: classroom-resources/autograding-command-grader@v1
       with:
         test-name: React Test
-        setup-command: npm install --save-dev jest jsdom jest-environment-jsdom react-scripts
-        command: npm test
+        setup-command: npm install --save-dev jest jsdom jest-environment-jsdom
+        command: npm test -- --watchAll=false
         timeout: 10
     - name: Autograding Reporter
       uses: classroom-resources/autograding-grading-reporter@v1
