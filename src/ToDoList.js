@@ -30,7 +30,7 @@ const itodos = [
   Nullam nec nibh nibh. Nullam quis nisl nec nunc congue mollis. `, dueDate: '2024-04-11' },
 ];
 
-function ToDoList() {
+function TodoList() {
   
   const [todos, setTodos] = useState(itodos);
   const [selectedTodo, setSelectedTodo] = useState(null);
@@ -185,4 +185,4 @@ function ToDoList() {
   );
 }
 
-export default ToDoList;
+export default TodoList;
